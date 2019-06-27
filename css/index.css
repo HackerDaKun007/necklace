@@ -1,0 +1,92 @@
+.map-pagination .swiper-pagination-bullet-active{
+    background:#fff;
+}
+.map-pagination .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+}
+body .map-next,body .map-prev{
+    background-size:15px;
+    width:30px;
+    height: 40px;
+    background-color:rgba(0,0,0,.3);
+    opacity: 0;
+}
+body .map-next{
+    right: 0px;
+}
+body .map-prev{
+    left: 0px;
+}
+
+.public-whole{
+    margin-top:20px;
+}
+
+/*栏目推荐*/
+.index-column{
+    margin: 10px;
+}
+.index-column .layui-col-md4{
+    padding:10px;
+}
+.index-column-img{
+    width: 100%;
+}
+.index-column-back{
+    position: absolute;
+    background-color:rgba(0,0,0,.2);
+    top: 0;
+    width: 100%;
+    top: 0;
+    bottom:0;
+}
+.index-column-gos{
+    position:relative;
+    overflow:hidden;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+.index-column-user{
+    font-size:36px;
+    color:#fff;
+    position:absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.index-column-user .index-column-bottom{
+    position: relative;
+    padding:0 10px;
+}
+.index-column-ts{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width:0%;
+    height: 2px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+/**/
+.index-title{
+    width:100%;
+}
+
+/*屏幕最小控制*/
+@media (max-width:768px){
+    .index-column-ts{
+        width:100%;
+    }
+}
