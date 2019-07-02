@@ -33,14 +33,36 @@ $('.map-container').on('mouseleave',function(){
 });
 var ars;
 //控制栏目推荐
-$('.index-column .layui-col-md4').on('mouseenter',function(){
-    var ar = $(this);
-     ars = setTimeout(function(){
-        ar.find('.index-column-ts').animate({width:'100%'},300);
-         ar.find('.index-column-back').animate({width:'100%'},300);
-    },500);
-});
-$('.index-column .layui-col-md4').on('mouseleave',function(){
-    clearTimeout(ars);
-    $(this).find('.index-column-ts').animate({width:'0%'},500);
+// $('.index-column .layui-col-md4').on('mouseenter',function(){
+//     var ar = $(this);
+//      ars = setTimeout(function(){
+//         ar.find('.index-column-ts').animate({width:'100%'},300);
+//          ar.find('.index-column-back').animate({width:'100%'},300);
+//     },500);
+// });
+// $('.index-column .layui-col-md4').on('mouseleave',function(){
+//     clearTimeout(ars);
+//     $(this).find('.index-column-ts').animate({width:'0%'},500);
+// });
+
+
+//限时优惠
+var swiperoffer = new Swiper('.offer', {
+    slidesPerView:5.5,
+    spaceBetween: 20,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4.5,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3.5,
+            spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
+    },
+
 });

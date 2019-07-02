@@ -11,8 +11,46 @@
     <link rel="stylesheet" media="all" href="./css/index.css" />
     <link rel="stylesheet" href="./css/swiper.min.css">
     <meta name="google-site-verification" content="zkOGPqmfpdhahUsoOqTKFxggitl91udvTZggmPK5GxU" />
+    <script src="./js/clipboard.min.js"></script>
 </head>
 <body>
+
+<textarea cols="20" rows="10" id="public-textarea"></textarea>
+
+<!-- 客服 -->
+<div class="service">
+    <div class="service-title">
+        <span class="iconfont icon-kefu"></span>
+        <span class="service-text">在线咨询</span>
+    </div>
+    <div class="service-QQ">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">客服1号</span>
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">客服2号</span>
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">客服3号</span>
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">杨经理</span>
+        </a>
+        <a class="service-QQ-ko weixin" img="./img/weixin.png"  num="heikedakun" >
+            <span class="icon-weixin2 iconfont"></span>
+            <span class="service-QQ-kes">微信客服</span>
+        </a>
+    </div>
+</div>
+
+<!--返回顶部-->
+<div class="public-top">
+    <span class="layui-icon-top layui-icon"></span>
+</div>
 
 <!--header-->
 <div class="public-header">
@@ -76,18 +114,21 @@
 </div>
 
 <!--logo-->
-<div class="public-logo">
-    <img src="./img/logo.png" />
-    <div class="public-logo-centr">
-        <input value="" placeholder="搜索" />
-        <span class="iconfont icon-sousuo2"></span>
+<div class="public-width">
+    <div class="public-logo">
+        <img src="./img/logo.png" />
+        <div class="public-logo-centr">
+            <input value="" placeholder="搜索" />
+            <span class="iconfont icon-sousuo2"></span>
+        </div>
     </div>
 </div>
+
 <!--导航-->
 <div class="public-column">
     <div class="public-column-title">
         <a href="#" class="public-column-a">首页</a>
-        <a href="#" class="public-column-a">新品上市</a>
+        <a href="#" class="public-column-a">新品</a>
         <a href="#" class="public-column-a">项链</a>
         <a href="#" class="public-column-a">吊坠</a>
         <a href="#" class="public-column-a">手链</a>
@@ -96,6 +137,29 @@
     </div>
 </div>
 
+<!-- 手机模块 -->
+<div class="mobile">
+    <!--搜索-->
+    <div class="mobile-sou">
+        <form method="get" type="" action="./sou.html" >
+            <div class="mobile-zij">
+                <input type="" name="username" placeholder="输入宝贝名称" class="mobile-input" />
+                <span class="layui-icon-search layui-icon"></span>
+            </div>
+            <input type="submit" class="mobile-submit" value="搜索" />
+        </form>
+    </div>
+
+    <div class="mobile-title">
+        <a href="#" class="active">首页</a>
+        <a href="#">新品</a>
+        <a href="#">项链</a>
+        <a href="#">吊坠</a>
+        <a href="#">手链</a>
+        <a href="#">戒指</a>
+        <a href="#">配件</a>
+    </div>
+</div>
 
 <!--轮播图-->
 <div class="swiper-container map-container">
@@ -116,31 +180,38 @@
 <div class="public-whole">
     <!--栏目推荐-->
     <div class="layui-row layui-col-space5 index-column">
-        <div class="layui-col-md4">
+        <div class="layui-col-md3">
             <div class="index-column-gos">
                 <img src="./img/02.jpg" class="index-column-img" />
                 <div class="index-column-back"></div>
-                <div class="index-column-user"><div class="index-column-bottom">项链<div class="index-column-ts"></div></div></div>
+                <div class="index-column-user"><div class="index-column-bottom">项链</div></div>
             </div>
         </div>
-        <div class="layui-col-md4">
+        <div class="layui-col-md3">
             <div class="index-column-gos">
                 <img src="https://ae01.alicdn.com/kf/HTB1QnlHSFXXXXa0aXXXq6xXFXXXR/Promise-925-Sterling-Silver-Ring-Classic-Wedding-Ring-Jewelry-Cubic-Zircon-Rings-for-Women-Bridesmaid-Gifts.jpg" class="index-column-img" />
                 <div class="index-column-back"></div>
-                <div class="index-column-user"><div class="index-column-bottom">戒指<div class="index-column-ts"></div></div></div>
+                <div class="index-column-user"><div class="index-column-bottom">戒指</div></div>
             </div>
         </div>
-        <div class="layui-col-md4">
+        <div class="layui-col-md3">
             <div class="index-column-gos">
                 <img src="https://ae01.alicdn.com/kf/HTB1dXENSXXXXXaGXVXXq6xXFXXX0/Adjustable-Open-Stainless-Steel-Bracelet-Bangles-3-Color-Cuff-Bracelet-For-Women-Jewelry-Gift-For-Girls.jpg" class="index-column-img" />
                 <div class="index-column-back"></div>
-                <div class="index-column-user"><div class="index-column-bottom">手链<div class="index-column-ts"></div></div></div>
+                <div class="index-column-user"><div class="index-column-bottom">手链</div></div>
+            </div>
+        </div>
+        <div class="layui-col-md3">
+            <div class="index-column-gos">
+                <img src="./img/diaozhui.jpg" class="index-column-img" />
+                <div class="index-column-back"></div>
+                <div class="index-column-user"><div class="index-column-bottom">吊坠</div></div>
             </div>
         </div>
     </div>
 
     <!--热卖商品-->
-    <div class="index-title">
+    <div class="public-top-20 index-title">
         热销产品
     </div>
     <!--商品-->
@@ -191,20 +262,375 @@
         </div>
     </div>
 
-    <!--<div class="layui-row layui-col-space1">-->
-        <!--<div class="layui-col-md3">-->
-            <!--<div class="grid-demo grid-demo-bg1">1/4</div>-->
-        <!--</div>-->
-        <!--<div class="layui-col-md3">-->
-            <!--<div class="grid-demo">1/4</div>-->
-        <!--</div>-->
-        <!--<div class="layui-col-md3">-->
-            <!--<div class="grid-demo grid-demo-bg1">1/4</div>-->
-        <!--</div>-->
-        <!--<div class="layui-col-md3">-->
-            <!--<div class="grid-demo">1/4</div>-->
-        <!--</div>-->
-    <!--</div>-->
+
+    <!--优惠栏目-->
+    <div class="index-title public-top-20">
+        限时优惠
+    </div>
+    <div class="seling">
+        <div class="swiper-container offer">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="offer-img">
+                            <div class="offer-img-back"></div>
+                            <img src="./img/03.jpg" />
+                        </div>
+                        <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                        <div class="offer-amount">
+                            <span class="offer-amount-discount">$500</span>
+                            <span class="offer-amount-price">$600</span>
+                        </div>
+                        <div class="offer-bottom">
+                            <span class="layui-icon-rate-solid layui-icon"></span>
+                            <span class="offer-miuntie">4.0</span>
+                            <span class="offer-sold">107 Sold</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--产品-->
+    <a href="#" class="goods-index">
+        <img src="./img/6.jpg">
+    </a>
+
+    <!-- 猜你喜欢 -->
+    <div class="index-title public-top-20">
+        猜你喜欢
+    </div>
+    <ul class="like">
+        <li>
+           <a href="#">
+               <div class="like-div">
+                   <div class="offer-img">
+                       <div class="offer-img-back"></div>
+                       <img src="./img/03.jpg" />
+                   </div>
+                   <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                   <div class="offer-amount">
+                       <span class="offer-amount-discount">$500</span>
+                       <span class="offer-amount-price">$600</span>
+                   </div>
+                   <div class="offer-bottom">
+                       <span class="layui-icon-rate-solid layui-icon"></span>
+                       <span class="offer-miuntie">4.0</span>
+                       <span class="offer-sold">107 Sold</span>
+                   </div>
+               </div>
+           </a>
+       </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="like-div">
+                    <div class="offer-img">
+                        <div class="offer-img-back"></div>
+                        <img src="./img/03.jpg" />
+                    </div>
+                    <div class="offer-title">施华洛世奇蓝色天鹅(大) ICONIC SWAN浪漫柔美灵动女项链</div>
+                    <div class="offer-amount">
+                        <span class="offer-amount-discount">$500</span>
+                        <span class="offer-amount-price">$600</span>
+                    </div>
+                    <div class="offer-bottom">
+                        <span class="layui-icon-rate-solid layui-icon"></span>
+                        <span class="offer-miuntie">4.0</span>
+                        <span class="offer-sold">107 Sold</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+
+</div>
+
+<!--底部-->
+<div class="bottom">
+    <div class="bottom-whole">
+        <div class="bottom-title">
+            <a href="#" class="bottom-span">关于我们</a>
+            <a href="#" class="bottom-span">联系我们</a>
+            <a href="#" class="bottom-span">反馈问题</a>
+            <a href="#" class="bottom-span">企业信息</a>
+        </div>
+        <div class="bottom-banquan"><span class="bottom-span">©2019 广州乐美购科技有限公司 版权所有</span></div>
+        <div class="bottom-banquan bottom-jine">
+            <img src="./img/jinhui.png" />
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602000378" id="weibu_b_b">粤公网安备 44010402000169号</a>
+            <a id="weibu_b_a" href="http://www.beian.miit.gov.cn" target="_blank">粤B2-20050065号</a>
+        </div>
+    </div>
+</div>
+
+ <!--手机按钮-->
+<div class="bar">
 
 </div>
 

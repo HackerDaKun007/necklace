@@ -11,7 +11,9 @@ img{
 li{
     list-style-type: none;
 }
-
+body{
+    /*background:#f2f2f2;*/
+}
 /*header*/
 .public-header{
 
@@ -171,6 +173,7 @@ li{
     width: 100%;
     max-width:1200px;
     height: 100px;
+    background:#fff;
     /*border-bottom:1px solid #eee;*/
     position: relative;
     display: flex;
@@ -252,9 +255,305 @@ li{
     left: -9px;
 }
 
+
+/*手机端*/
+.mobile{
+    background: #fff;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.mobile-sou{
+    height: 35px;
+    width: 100%;
+    margin:10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-sou form{
+    flex: 1;
+    padding: 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-zij{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+.mobile-input{
+    width: 100%;
+    height: 35px;
+    color: #666666;
+    border:none;
+    font-size: 14px;
+    background: #eeeeee;
+}
+.mobile-sou .layui-icon-search{
+    padding-right: 5px;
+    color: #666;
+}
+.mobile-submit{
+    width: 35px;
+    background: #ff4747;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 100%;
+    margin-left: 10px;
+    height: 25px;
+}
+
+.mobile-title{
+    margin:0 10px;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+}
+.mobile-title a{
+    padding-right: 20px;
+    font-size: 18px;
+    width: 60px;
+    min-width: 50px;
+    color: #000;
+}
+.mobile-title a.active{
+    color: #ff4747;
+}
+
 /*全部应用1200*/
 .public-whole{
     width:100%;
     max-width:1200px;
     margin:0 auto;
+    background: #fff;
+}
+
+
+.public-top-20{
+    margin-top:20px;
+}
+
+
+/*底部*/
+.bottom{
+    background: #2F4056;
+    margin-top: 20px;
+}
+.bottom-whole{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.bottom-title{
+    /*height: 100px;*/
+    padding:50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-span{
+    flex: 1;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+}
+a.bottom-span{
+    color: #fff;
+}
+.bottom-banquan{
+    height: 30px;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    line-height: 30px;
+    align-items: center;
+}
+.bottom-banquan .bottom-span{
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+}
+.bottom-banquan img{
+    width: 25px;
+    margin-right: 10px;
+}
+.bottom-banquan  #weibu_b_b{
+    margin-right: 10px;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 12px;
+}
+.bottom-banquan #weibu_b_a{
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.bottom-jine{
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/*返回顶部*/
+.public-top{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom:60px;
+    right: 15px;
+    background:rgba(0,0,0,.3);
+    z-index: 3;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.public-top .layui-icon{
+    color: #fff;
+    font-size: 40px;
+}
+
+
+/*客服*/
+.service{
+    position: fixed;
+    top: 30%;
+    right: -135px;
+    z-index: 8;
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+}
+.service-text{
+    font-size: 16px;
+    writing-mode:vertical-lr;
+    line-height: 14px;
+    letter-spacing:5px;
+}
+.service-title{
+    cursor: pointer;
+    background: #1E9FFF;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    z-index: 8;
+    box-shadow: -1px 0px 5px rgba(0,0,0,.3);
+}
+.icon-weixin2{
+    cursor: pointer;
+    background: #5FB878;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    margin:0px 10px;
+    margin-right: 5px;
+    border-radius: 100%;
+
+}
+.service-title .icon-kefu{
+    font-size: 25px;
+    display: block;
+    padding-bottom:3px;
+}
+
+.service-QQ{
+    min-height: 150px;
+    flex: 1;
+    background: #fff;
+    width: 113px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+
+.service-QQ-ko{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+}
+.service-QQ-kes{
+    color: #000;
+}
+
+.service-QQ-ko .icon-qq1{
+    color: #1E9FFF;
+    padding:0 10px;
+}
+
+.weixin-title{
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.weixin-copy{
+    text-align: center;
+}
+
+.service{
+
+}
+
+#public-textarea{
+    position: absolute;
+    left: -1000px;
+}
+
+
+/*手机到导航栏*/
+.bar{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+
+body .skin-weixin{
+    left: 0;
+    height: 427px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    display: flex;
+}
+@media (max-width:767px){
+    body .bottom-title{
+        display: none;
+    }
+    .bottom-whole{
+        padding-top:10px;
+        padding-bottom: 50px;
+    }
+
+    body .public-header,body .public-logo,body .public-column{
+        display: none;
+    }
+
+    body .mobile{
+        display: flex;
+    }
 }
