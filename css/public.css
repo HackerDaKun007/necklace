@@ -187,7 +187,7 @@ body{
 .public-logo-centr{
     position:absolute;
     right: 10px;
-    width: 200px;
+    width: 240px;
     border:1px solid #b8b7b6;
     height: 50px;
     display:flex;
@@ -528,6 +528,7 @@ a.bottom-span{
     background: #fff;
     position: fixed;
     bottom: 0;
+    z-index: 9;
     box-shadow: 0px 0px 5px rgba(0,0,0,.3);
 }
 
@@ -538,7 +539,6 @@ body .skin-weixin{
     top: 0;
     bottom: 0;
     margin:auto;
-    display: flex;
 }
 @media (max-width:767px){
     body .bottom-title{

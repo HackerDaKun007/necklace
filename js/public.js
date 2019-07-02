@@ -26,7 +26,7 @@ layui.use(['flow','layer'], function(){
         var e=window.event || event;
         if(e.stopPropagation){
             e.stopPropagation();
-            $('.public-logo-centr ').animate({width:'240px'});
+            $('.public-logo-centr ').animate({width:'280px'});
         }else{
             e.cancelBubble = true;
         }
@@ -35,7 +35,7 @@ layui.use(['flow','layer'], function(){
         var e=window.event || event;
         if(e.which == 1) {
             //此处写触发函数
-            $('.public-logo-centr ').animate({width:'200px'});
+            $('.public-logo-centr ').animate({width:'240px'});
         }
     });
 

@@ -254,7 +254,7 @@ body .map-prev{
     flex-wrap: wrap;
 }
 .like li{
-    width: 25%;
+    width: 20%;
 }
 .like li a{
     display: block;
@@ -291,7 +291,7 @@ body .map-prev{
         margin-top:25px;
     }
     .like li{
-        width: 33.33%;
+        width: 25%;
     }
 }
 @media (max-width:876px){
@@ -315,6 +315,9 @@ body .map-prev{
 @media (max-width:668px){
     .layui-col-space5>*{
         width:50%;
+    }
+    .like li{
+        width: 33.33%;
     }
 }
 
