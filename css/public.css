@@ -66,6 +66,9 @@ body{
     border-radius: 10px;
     color: #fff;
 }
+.public-header-user a{
+    font-size: 14px;
+}
 .public-header-right .public-header-username{
     font-size: 12px;
     border-left:none;
@@ -187,7 +190,7 @@ body{
 .public-logo-centr{
     position:absolute;
     right: 10px;
-    width: 240px;
+    width: 200px;
     border:1px solid #b8b7b6;
     height: 50px;
     display:flex;
@@ -528,10 +531,76 @@ a.bottom-span{
     background: #fff;
     position: fixed;
     bottom: 0;
-    z-index: 9;
     box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    z-index: 9;
+    align-items: center;
+    display: none;
+    justify-content: center;
 }
 
+.bar-li{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.bar-li .bar-layui{
+    font-size: 12px;
+    color: #666;
+}
+.bar-li .iconfont,.bar-li .layui-icon{
+    font-size:24px;
+    color: #666;
+}
+
+.bar-badge{
+    position: absolute;
+    top: 0;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.bar-gouwc{
+    position: relative;
+}
+
+.bar-li .bar-layui.active,.bar-li .iconfont.active,.bar-li .layui-icon.active{
+    color: #ff4747;
+}
+
+
+/*加载中*/
+.public-load-bak{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.0);
+    z-index: 19891089;
+}
+.public-load{
+    max-width: 60px;
+    max-height: 60px;
+    background: rgba(0,0,0,.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 19891099;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.public-load i{
+    font-size: 50px; color: #fff;
+
+}
 body .skin-weixin{
     left: 0;
     height: 427px;
@@ -554,6 +623,9 @@ body .skin-weixin{
     }
 
     body .mobile{
+        display: flex;
+    }
+    body .bar{
         display: flex;
     }
 }

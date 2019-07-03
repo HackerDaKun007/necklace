@@ -1,4 +1,6 @@
 $('img').attr('ondragstart','return false;');
+
+
 layui.use(['flow','layer'], function(){
     var flow = layui.flow;
 
@@ -95,7 +97,8 @@ layui.use(['flow','layer'], function(){
     //点击打开微信
     $('.weixin').on('click',function(){
         var This = $(this);
-        $('#public-textarea').html(This.attr('num'));
+        $('#public-textarea').remove();
+        $('body').append('<textarea cols="20" rows="10" id="public-textarea">'+This.attr('num')+'</textarea>');
         layer.open({
             type: 1
             ,title: false //不显示标题栏
@@ -125,6 +128,8 @@ layui.use(['flow','layer'], function(){
                 });
 
                 return false;
+            },btn2:function(){
+                $('#public-textarea').remove();
             }
         });
     });
@@ -142,6 +147,8 @@ layui.use(['flow','layer'], function(){
         }
 
     });
+
+
 
 });
 

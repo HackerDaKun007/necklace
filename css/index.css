@@ -182,7 +182,6 @@ body .map-prev{
 }
 .offer a{
     display: block;
-    padding:10px;
 }
 .offer-title{
     color: #666;
@@ -272,6 +271,30 @@ body .map-prev{
 
 }
 
+/*匠心*/
+.lngenuit{
+    display: flex;
+    padding-left: 10px;
+}
+.lngenuit-img{
+    width: 30%;
+}
+.lngenuit p{
+    color: #636363;
+    overflow: hidden;
+    flex: 1;
+    max-height:63px;
+    margin:0 10px;
+}
+.lngenuit a{
+    font-size: 16px;
+    color: #636363;
+    padding: 0 10px;
+}
+.lngenuit-text{
+    display: flex;
+    flex-direction:column;
+}
 /*屏幕最小控制*/
 @media (max-width:1000px){
     .index-column{
