@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>项链页面 - 登陆</title>
+    <link rel="stylesheet" media="all" href="./../layui/css/layui.css" />
+    <link rel="stylesheet" media="all" href="./../css/public.css">
+    <link rel="stylesheet" media="all" href="./../font/iconfont.css" />
+    <!--logo/login-->
+    <link rel="stylesheet" media="all" href="./../css/logo/login.css" />
+    <script src="./../js/clipboard.min.js"></script>
+</head>
+<body>
+
+<!-- 客服 -->
+<div class="service">
+    <div class="service-title">
+        <span class="iconfont icon-kefu"></span>
+        <span class="service-text">在线咨询</span>
+    </div>
+    <div class="service-QQ">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">客服1号</span>
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">客服2号</span>
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">客服3号</span>
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1275263021&site=qq&menu=yes" class="service-QQ-ko">
+            <span class="icon-qq1 iconfont"></span>
+            <span class="service-QQ-kes">杨经理</span>
+        </a>
+        <a class="service-QQ-ko weixin" img="./../img/weixin.png"  num="heikedakun" >
+            <span class="icon-weixin2 iconfont"></span>
+            <span class="service-QQ-kes">微信客服</span>
+        </a>
+    </div>
+</div>
+
+<!--返回顶部-->
+<div class="public-top">
+    <span class="layui-icon-top layui-icon"></span>
+</div>
+
+<!--header-->
+<div class="public-header">
+    <div class="public-header-child">
+        <div class="public-header-left">
+            全场包邮，买二送一，买到就是赚到！
+        </div>
+        <div class="public-header-right">
+            <span class="public-header-span public-cait iconfont icon-gouwuche1">
+                <span class="public-header-number">0</span>
+                <div class="public-header-xixn" >
+                    <div class="triangle_border_up">
+                        <span></span>
+                    </div>
+                    <div class="public-header-xixn-text">
+                        <!--没有加入购物车-->
+                        当前购物车空空的，赶紧去购物吧！
+                        <button class="public-header-jiaru">添加购物车</button>
+
+                        <!--加入购物车的内容-->
+                        <!--<div class="public-money">当前金额：<span class="public-money-money">¥100元</span></div>-->
+                        <!--<div class="public-money">当前数量：<span class="public-money-number">1</span></div>-->
+                        <!--<ul class="public-ul">-->
+                        <!--<li>-->
+                        <!--<div class="public-ul-img">-->
+                        <!--<span class="public-ul-img-span">1</span>-->
+                        <!--<img src="https://ae01.alicdn.com/kf/HTB1xN5FQFXXXXb0XpXXq6xXFXXX9/Simple-Style-Backpack-Women-Leather-Backpacks-For-Teenage-Girls-School-Bags-Fashion-Vintage-Solid-Black-Shoulder.jpg"/>-->
+                        <!--</div>-->
+                        <!--<div class="public-ul-text">-->
+                        <!--<div>Tangcool Fashion Men Messenger Bag Men USB Charging Design Man Chest Bag Pack Anti Theft Shoulder Crossbody bags for Teenage</div>-->
+                        <!--<div class="public-ul-text-money">¥33元</div>-->
+                        <!--</div>-->
+                        <!--<i class="layui-icon layui-icon-close public-ul-error"></i>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--<div class="public-ul-img">-->
+                        <!--<span class="public-ul-img-span">1</span>-->
+                        <!--<img src="https://ae01.alicdn.com/kf/HTB1xN5FQFXXXXb0XpXXq6xXFXXX9/Simple-Style-Backpack-Women-Leather-Backpacks-For-Teenage-Girls-School-Bags-Fashion-Vintage-Solid-Black-Shoulder.jpg"/>-->
+                        <!--</div>-->
+                        <!--<div class="public-ul-text">-->
+                        <!--<div>Tangcool Fashion Men Messenger Bag Men USB Charging Design Man Chest Bag Pack Anti Theft Shoulder Crossbody bags for Teenage</div>-->
+                        <!--<div class="public-ul-text-money">¥33元</div>-->
+                        <!--</div>-->
+                        <!--<i class="layui-icon layui-icon-close public-ul-error"></i>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--<button type="button" class="layui-btn public-ul-bottom public-ul-gou">立即购买</button>-->
+                        <!--<button type="button" class="layui-btn layui-btn-normal public-ul-bottom">查看购物车</button>-->
+                    </div>
+                </div>
+            </span>
+            <span class="public-header-span iconfont icon-shoucang5">
+                <span class="public-header-number">0</span>
+            </span>
+            <span class="public-header-span public-header-username ">
+                <span class="iconfont icon-xingmingyonghumingnicheng"></span>
+                <span class="public-header-user"><a href="#" class="public-landing">登陆</a> / <a href="./logo/reg.html" >注册</a></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!--logo-->
+<div class="public-width">
+    <div class="public-logo">
+        <img src=".././/img/logo.png" />
+        <div class="public-logo-centr">
+            <input value="" placeholder="搜索" />
+            <span class="iconfont icon-sousuo2"></span>
+        </div>
+    </div>
+</div>
+
+
+
+<!--导航-->
+<div class="public-column">
+    <div class="public-column-title">
+        <a href="#" class="public-column-a">首页</a>
+        <a href="#" class="public-column-a">新品</a>
+        <a href="#" class="public-column-a">项链</a>
+        <a href="#" class="public-column-a">吊坠</a>
+        <a href="#" class="public-column-a">手链</a>
+        <a href="#" class="public-column-a">戒指</a>
+        <a href="#" class="public-column-a">配件</a>
+    </div>
+</div>
+
+<!-- 手机模块 -->
+<div class="mobile">
+    <!--搜索-->
+    <div class="mobile-sou">
+        <form method="get" type="" action="./sou.html" >
+            <div class="mobile-zij">
+                <input type="" name="username" placeholder="输入宝贝名称" class="mobile-input" />
+                <span class="layui-icon-search layui-icon"></span>
+            </div>
+            <input type="submit" class="mobile-submit" value="搜索" />
+        </form>
+    </div>
+
+    <div class="mobile-title">
+        <a href="#" class="active">首页</a>
+        <a href="#">新品</a>
+        <a href="#">项链</a>
+        <a href="#">吊坠</a>
+        <a href="#">手链</a>
+        <a href="#">戒指</a>
+        <a href="#">配件</a>
+    </div>
+</div>
+
+<div class="login">
+
+</div>
+
+<!--底部-->
+<div class="bottom">
+    <div class="bottom-whole">
+        <div class="bottom-title">
+            <a href="#" class="bottom-span">关于我们</a>
+            <a href="#" class="bottom-span">联系我们</a>
+            <a href="#" class="bottom-span">反馈问题</a>
+            <a href="#" class="bottom-span">企业信息</a>
+        </div>
+        <div class="bottom-banquan"><span class="bottom-span">©2019 广州乐美购科技有限公司 版权所有</span></div>
+        <div class="bottom-banquan bottom-jine">
+            <img src="./../img/jinhui.png" />
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602000378" id="weibu_b_b">粤公网安备 44010402000169号</a>
+            <a id="weibu_b_a" href="http://www.beian.miit.gov.cn" target="_blank">粤B2-20050065号</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script src="./../layui/layui.js"></script>
+<script src="./../js/jquery.js"></script>
+<script src="./../js/public.js"></script>
+<script src="./../js/sw.js"></script>
+<script src="./../js/logo/login.js"></script>
