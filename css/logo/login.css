@@ -1,11 +1,27 @@
 
+/*pc端*/
 .login{
     width: 100%;
     background-image: url('./../../img/login.jpg');
-    background-position: 100%;
+    background-position:center ;
+    -webkit-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 600px;
 }
 
+.login-box{
+    max-width: 1200px;
+    background: red;
+    height: 100%;
+    margin:0 auto;
+    position: relative;
+}
+.login-wrap{
+    position: absolute;
+    right: 0px;
+
+}
 @media (max-width: 767px){
     .bottom-whole {
         padding-bottom: 0px;

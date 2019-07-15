@@ -570,6 +570,16 @@ a.bottom-span{
     color: #ff4747;
 }
 
+.public-wed-mobile{
+    position:fixed;
+    top:-100px;
+    width:100%;
+    z-index: 99;
+    -moz-box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,.3);
+    -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+}
+
 
 /*加载中*/
 .public-load-bak{
@@ -609,6 +619,12 @@ body .skin-weixin{
     bottom: 0;
     margin:auto;
 }
+.reg-login{
+    display: none;
+}
+.reg-fomr-button .layui-input-block{
+    display: flex;
+}
 @media (max-width:767px){
     body .bottom-title{
         display: none;
@@ -624,8 +640,15 @@ body .skin-weixin{
 
     body .mobile{
         display: flex;
+        border-bottom: 1px solid #f0f0f0;
     }
     body .bar{
         display: flex;
+    }
+    .reg-reset{
+        display:none;
+    }
+    .reg-login{
+        display: block;        
     }
 }

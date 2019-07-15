@@ -28,7 +28,7 @@ layui.use(['flow','layer'], function(){
         var e=window.event || event;
         if(e.stopPropagation){
             e.stopPropagation();
-            $('.public-logo-centr ').animate({width:'280px'});
+            $('.public-logo-centr ').stop().animate({width:'280px'});
         }else{
             e.cancelBubble = true;
         }
@@ -37,7 +37,7 @@ layui.use(['flow','layer'], function(){
         var e=window.event || event;
         if(e.which == 1) {
             //此处写触发函数
-            $('.public-logo-centr ').animate({width:'240px'});
+            $('.public-logo-centr ').stop().animate({width:'240px'});
         }
     });
 
@@ -64,11 +64,11 @@ layui.use(['flow','layer'], function(){
 
     moblie(scrolltop);
     function moblie(scrolltop){
-        var mobile = $('.mobile');
-        if(scrolltop > 60){
-            mobile.css({width:'100%','z-index':2,top:'0px',position:'fixed','box-shadow':'1px 1px 10px rgba(0,0,0,.3)'});
+        var wed_mobile = $('.public-wed-mobile');
+        if(scrolltop > 90){
+            wed_mobile.stop().animate({top:"0"});
         }else{
-            mobile.css({width:'100%','z-index':2,top:0,position:'unset'});
+            wed_mobile.stop().animate({top:"-100px"});
         }
     }
 
@@ -91,7 +91,7 @@ layui.use(['flow','layer'], function(){
 
     //点击返回头部
     Pubtop.on('click',function(){
-        $('html,body').animate({scrollTop:'0'},800);
+        $('html,body').stop().animate({scrollTop:'0'},800);
     });
 
     //点击打开微信
@@ -141,9 +141,9 @@ layui.use(['flow','layer'], function(){
     $('.service-title').on('click',function(){
         var src = $('.service');
         if(src.css('right') == '-135px'){
-            src.animate({'right':'0'});
+            src.stop().animate({'right':'0'});
         }else{
-            src.animate({'right':'-135px'});
+            src.stop().animate({'right':'-135px'});
         }
 
     });
